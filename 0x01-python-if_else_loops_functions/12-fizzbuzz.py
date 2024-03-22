@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-for count in range(1, 101):
-    if count in range(15, 101, 15):
-        print("FizzBuzz" .format(count), end=" ")
-    if count in range(3, 101, 3):
-        print("Fizz " .format(count), end=" ")
-    elif count in range(5, 101, 5):
-        print("Buzz " .format(count), end=" ")
-    else:
-        print(count, end=" ")
+def fizzbuzz():
+    for number in range (1, 101):
+        if number % 3 == 0 and number % 5 == 0:
+            print("FizzBuzz", end="")
+        if number % 3 == 0:
+            print("Fizz", end="")
+        elif number % 5 == 0:
+            print("Buzz", end="")
+        else:
+            print("{} ".format(number), end="")
